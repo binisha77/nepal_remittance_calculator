@@ -1,31 +1,31 @@
-
-# Program to take receiver details
-
-# Taking input from user
-receiver_name = input("Enter receiver's name: ")
-country = input("Enter receiver's country: ")
-amount = float(input("Enter amount to send: "))
-
-# Displaying the information
-print("\n--- Transaction Details ---")
-print("Receiver Name:", receiver_name)
-print("Country:", country)
-print("Amount:", amount)
+for i in range(3):
+    print("\n--- Transaction", i+1, "---")
 
 
-# Task 3: Calculate NPR amount and service charge
+    # Taking input from user
+    receiver_name = input("Enter receiver's name: ")
+    country = input("Enter receiver's country: ")
+    amount = float(input("Enter amount to send: "))
 
-if country.lower() == "usa":
-    rate = 132
-elif country.lower() == "india":
-    rate = 1.6
-elif country.lower() == "australia":
-    rate = 88
-else:
-    rate = 100  # default rate
+    # Displaying the information
+    print("\n--- Transaction Details ---")
+    print("Receiver Name:", receiver_name)
+    print("Country:", country)
+    print("Amount:", amount)
 
-npr_amount = amount * rate
-service_charge = npr_amount * 0.02
+    # Task 3: Calculate NPR amount and service charge
+    if country.lower() == "usa":
+        rate = 132
+    elif country.lower() == "india":
+        rate = 1.6
+    elif country.lower() == "australia":
+        rate = 88
+    else:
+        rate = 100  # default rate
 
-print("Converted NPR:", npr_amount)
-print("Service Charge:", service_charge)
+    npr_amount = amount * rate
+    service_charge = npr_amount * 0.02
+
+    print("Converted NPR:", npr_amount)
+    print("Service Charge:", service_charge)
+    print("Total Received:", npr_amount - service_charge)
