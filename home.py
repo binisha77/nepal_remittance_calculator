@@ -11,3 +11,14 @@ print("\n--- Transaction Details ---")
 print("Receiver Name:", receiver_name)
 print("Country:", country)
 print("Amount:", amount)
+
+
+#Task 2: Use if-elif to assign the exchange rate based on the country 
+if country == "USA":
+        rate = 132
+elif country == "Australia":
+        rate = 88
+elif country == "India":
+        rate = 1.6
+else:
+        rate = 1  
