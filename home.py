@@ -1,10 +1,12 @@
+for i in range(3):
+    print("\n--- Transaction", i+1, "---")
 
-# Program to take receiver details
 
-# Taking input from user
-receiver_name = input("Enter receiver's name: ")
-country = input("Enter receiver's country: ")
-amount = float(input("Enter amount to send: "))
+    # Taking input from user
+    receiver_name = input("Enter receiver's name: ")
+    country = input("Enter receiver's country: ")
+    amount = float(input("Enter amount to send: "))
+
 
 # Displaying the information
 print("\n--- Transaction Details ---")
